@@ -1,28 +1,28 @@
 // Use custom JavaScript here
-(function($) {
+(function ($) {
   "use strict";
 
   // Preload
-  $(window).on("load", function() {
+  $(window).on("load", function () {
     $(".preloader-wrapper").fadeOut();
   });
 
   // sidebar navigation
-  $(".nav-button a").on("click", function(e) {
+  $(".nav-button a").on("click", function (e) {
     e.preventDefault();
     $(".sidebar-navigation").toggleClass("active");
   });
-  $(".side-nav-close-btn a").on("click", function(e) {
+  $(".side-nav-close-btn a").on("click", function (e) {
     e.preventDefault();
     $(".sidebar-navigation").toggleClass("active");
   });
 
-  $(".side-nav-wrapper ul li a").on("click", function() {
+  $(".side-nav-wrapper ul li a").on("click", function () {
     $(".sidebar-navigation").removeClass("active");
   });
 
   // extra-area nav-tabs and tab-pane toggle active
-  $(".extra-area .nav-tabs li").on("click", function() {
+  $(".extra-area .nav-tabs li").on("click", function () {
     $(".extra-area .nav-tabs li").removeClass("active");
     $(this).addClass("active");
     $(".extra-area .tab-content .tab-pane").removeClass("active");
@@ -32,8 +32,8 @@
   });
 
   // Skill section animation
-  $(window).on("scroll", function() {
-    $(".percentage").each(function() {
+  $(window).on("scroll", function () {
+    $(".percentage").each(function () {
       let element_height = $(this).offset().top + $(this).outerHeight();
       let window_height = $(window).scrollTop() + $(window).height();
       let bar_width_val = $(this).attr("data-value");
@@ -91,51 +91,51 @@
 
 
   const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+  const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Sushrut."];
-const typingDelay = 200;
-const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
+  const textArray = ["Sushrut."];
+  const typingDelay = 200;
+  const erasingDelay = 100;
+  const newTextDelay = 2000; // Delay between current and next text
+  let textArrayIndex = 0;
+  let charIndex = 0;
 
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-  	setTimeout(erase, newTextDelay);
+  function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+      if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+      typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingDelay);
+    }
+    else {
+      cursorSpan.classList.remove("typing");
+      setTimeout(erase, newTextDelay);
+    }
   }
-}
 
-// function erase() {
-// 	if (charIndex > 0) {
-//     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-//     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-//     charIndex--;
-//     setTimeout(erase, erasingDelay);
-//   } 
-//   else {
-//     cursorSpan.classList.remove("typing");
-//     textArrayIndex++;
-//     if(textArrayIndex>=textArray.length) textArrayIndex=0;
-//     setTimeout(type, typingDelay + 1100);
-//   }
-// }
+  // function erase() {
+  // 	if (charIndex > 0) {
+  //     if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+  //     typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+  //     charIndex--;
+  //     setTimeout(erase, erasingDelay);
+  //   } 
+  //   else {
+  //     cursorSpan.classList.remove("typing");
+  //     textArrayIndex++;
+  //     if(textArrayIndex>=textArray.length) textArrayIndex=0;
+  //     setTimeout(type, typingDelay + 1100);
+  //   }
+  // }
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
-});
-
+  document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+    if (textArray.length) setTimeout(type, newTextDelay + 250);
+  });
 
 
-$(document).ready(function(){
-  $('.customer-logos').slick({
+
+  $(document).ready(function () {
+    $('.customer-logos').slick({
       slidesToShow: 6,
       slidesToScroll: 1,
       autoplay: true,
@@ -144,18 +144,18 @@ $(document).ready(function(){
       dots: false,
       pauseOnHover: false,
       responsive: [{
-          breakpoint: 768,
-          settings: {
-              slidesToShow: 4
-          }
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
       }, {
-          breakpoint: 520,
-          settings: {
-              slidesToShow: 3
-          }
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 3
+        }
       }]
+    });
   });
-});
 
 
 })(jQuery);

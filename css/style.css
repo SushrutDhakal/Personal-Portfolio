@@ -23,7 +23,6 @@ body {
 .bossman {
   background-color: #130f22 !important;
   color: white !important;
-
 }
 
 h1,
@@ -1034,9 +1033,10 @@ img {
 /* =============================
    06. SUSHRUT'S PROJECT
 ================================ */
-
 .item:hover {
   background-color: #3e4d8c !important;
+  transform: translateY(-7px) !important;
+  transition-duration: 700ms !important;
 }
 
 /* Mobile Screen */
