@@ -40,7 +40,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/responsive.css">
 
-    <link rel="shortcut icon" type="image/x-icon" href="/images/slack.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
 </head>
@@ -77,7 +79,7 @@
                         </li>
                         <li class="nav-item header" onclick="addActive(event)">
                             <a class="nav-link" aria-current="page" id="achievements-link"
-                                href="#achievements">Achievements</a>
+                                href="#achievements">Extracurriculars</a>
                         </li>
                         <li class="nav-item header" onclick="addActive(event)">
                             <a class="nav-link" aria-current="page" id="contact-link" href="#contact">Contact</a>
@@ -113,12 +115,12 @@
                                 <div style="text-align: left;">
                                     <span style="font-size: 40px;">
                                         <a href="https://github.com/SushrutDhakal" target="_blank">
-                                            <i class="text-white fa-brands
+                                            <i class="text-white fa-brands topLogos
                                         fa-github"></i></a> &nbsp;&nbsp;
                                         <a href="https://www.linkedin.com/in/sushrut-dhakal/" target="_blank">
-                                            <i class="text-white fa-brands fa-linkedin"></i></a>&nbsp;&nbsp;
+                                            <i class="text-white fa-brands fa-linkedin topLogos"></i></a>&nbsp;&nbsp;
                                         <a href="mailto:sushrut.dhakal@gmail.com" target="_blank">
-                                            <i class="text-white fab fa-google"></i></a>
+                                            <i class="text-white fab fa-google topLogos"></i></a>
                                     </span>
                                 </div>
                             </p2>
@@ -184,12 +186,12 @@
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                                 data-bs-slide="prev">
                                 <span aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
+                                <span class="visually-hidden"></span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
+                                <span class="visually-hidden"></span>
                             </button>
                         </div>
                     </section>
@@ -232,22 +234,23 @@
                 <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay=".05s" style="margin-top: 7%;">
                     <!-- Box classic-->
                     <article class="box-classic block-md text-box">
-
-                        <img src="images/slack.png" alt="Slack4Uni Logo" style="width: 50%; height: 50%;">
-                        <div class="heading-6 box-classic-title text-dark"><a href="#">Slack4Uni</a></div>
+                        <div class="box-classic-icon"><span class="mdi
+                            mdi-speedometer"></span></div>
+                        <div class="heading-6 box-classic-title text-dark"><a target=blank href="#">Note Taking Plugin
+                                <a target=blank href="#"><i style="font-size:20px; padding-left: .5em;"
+                                        class="fa fa-folder-open-o"></i></a></a>
+                        </div>
                         <div class="box-classic-text" style="text-align:
                                     left;">
-                            <p>Our platform
-                                Vestibulum auctor dapibus neque.
-                                Nunc dignissim risus id metus.
-                                Cras ornare tristique elit.</p>
-                            <p>
-                                more muchas bonitos bonitos bonitos bonitos bonitos bonitos bonitos bonitos bonitos
-                                bonitos bonitos bonitos bonitos bonitos bonitos bonitos bonitos bonitos bonitos bonitos
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium non culpa esse,
+                            impedit atque quam corporis veritatis repellendus perferendis sint, similique est ea tempora
+                            dolore consectetur tempore quas at. Saepe.
                             </p>
                             <p>
-                                bonitos bonitos bonitos bonitos bonitos bonitos bonitos bonitos bonitos
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium non culpa esse,
+                                impedit atque quam corporis
                             </p>
+
                         </div>
                     </article>
                 </div>
@@ -256,19 +259,20 @@
                     <article class="box-classic block-md text-box">
                         <div class="box-classic-icon"><span class="mdi
                                         mdi-speedometer"></span></div>
-                        <div class="heading-6 box-classic-title text-dark"><a href="#">Weather Whenever</a></div>
+                        <div class="heading-6 box-classic-title text-dark"><a href="https://weather-app-8033d.web.app"
+                                target=blank>Weather Whenever <a target=blank
+                                    href="https://weather-app-8033d.web.app/weather"><i
+                                        style="font-size:20px; padding-left: .5em;"
+                                        class="fa fa-folder-open-o"></i></a></a>
+                        </div>
                         <div class="box-classic-text" style="text-align:
                                     left;">
-                            <p>Our platform
-                                Vestibulum auctor dapibus neque.
-                                Nunc dignissim risus id metus.
-                                Cras ornare tristique elit.</p>
+                            <p>A <b>Web App</b> with an accesible and attractive design, designed to produce accesible
+                                weather
+                                details and to help users plan their outfits correct for the weather.</p>
                             <p>
-                                The amazing
-                                flexibility of the
-                                platform allows our users to easily sell
-                                cryptocurrency and
-                                buy tokens.
+                                Utilized <b>React</b> to output an attractive interface, a <b>Weather API</b> to produce
+                                nescessary weather data, and <b>Firebase</b> for user authentication and databases.
                             </p>
                         </div>
                     </article>
@@ -278,14 +282,22 @@
                     <article class="box-classic block-md text-box">
                         <div class="box-classic-icon"><span class="mdi
                                         mdi-settings"></span></div>
-                        <div class="heading-6 box-classic-title text-dark"><a href="#">Training & Certifications
-                            </a></div>
+                        <div class="heading-6 box-classic-title text-dark"><a target=blank
+                                href="https://github.com/SushrutDhakal/NimbleCoder">NimbleCoder
+                                <a target=blank href="https://sushrutdhakal.github.io/NimbleCoder"><i
+                                        style="font-size:20px; padding-left: .5em;" class="fa fa-folder-open-o"></i></a>
+                            </a>
+                        </div>
                         <div class="box-classic-text" style="text-align:
-                                    left;">The amazing
-                            flexibility of the
-                            platform allows our users to easily sell
-                            cryptocurrency and
-                            buy tokens.
+                                    left;">
+                            <p>A <b>Typing Test Website</b> designed for optimal focus and developed for programmers to
+                                practice typing code. </p>
+                            <p>
+                                Utilized <b>Svelte</b> with <b>HTML and CSS</b> to code a interface that users can focus
+                                on, <b>File Read</b> algorithm to display code for the users to type and
+                                <b>Typescript</b> for key pressed functionalities.
+
+                            </p>
                         </div>
                     </article>
                 </div>
@@ -298,9 +310,10 @@
             <div class="bg-decor-line"></div>
             <div class="section-lg text-center">
                 <div class="container p-4">
+                    <br><br>
                     <h2 class="wow fadeInUp text-white section-title"
                         style="text-align:left; font-family: Proxima Nova, Frutiger, Avenir Next; font-size: 40px;">
-                        Smaller Projects</h2>
+                        Smaller Projects </h2> <br>
 
                     <div class="row">
                         <div class="col-sm-4 col-lg-4 wow fadeInUp" data-wow-delay=".05s" ">
@@ -311,28 +324,28 @@
                                 <span class=" mdi mdi-settings"></span>
                                 <i style='font-size:33px' class='fas text-primary float-left'>&#xf07b;</i>
                                 <i class="fa-light fa-arrow-right-from-arc float-right"></i></i></i>
-                                <a href="https://github.com/SushrutDhakal" target="blank"><i
+                                <a target=blank
+                                    href="https://chrome.google.com/webstore/detail/spotify-youtube-control/hmgldnhmlbfifangkahknpcnkclhkaho"><i
+                                        class="fa fa-upload text-white float-right"
+                                        style="font-size:19px; padding-left: .5em;"></i></a>
+
+                                <a href="https://github.com/SushrutDhakal/Spotify-Youtube-Control" target="blank"><i
                                         class="text-white fa-brands fa-github float-right"
                                         style="font-size:20px;"></i></a>
+
                             </div>
 
                             <div class="heading-6 box-classic-title text-white" style="text-align: left">
-                                <b>Insider Unlocked</b>
+                                <b>Spotify Youtube Control</b>
                             </div>
                             <div class="box-classic-text" style="text-align: left; color: #a19d8a;">
-                                The amazing
-                                flexibility of the
-                                platform allows our users to easily sell
-                                cryptocurrency and
-                                buy tokens.
+                                A Chrome Extension that is used to automate the process of
+                                pausing and unpausing YouTube Videos and Spotify Music.
                                 <br><br>
 
                                 <span style="font-size:
                                             13px;">
-                                    Flask,
-                                    JavaScript,
-                                    Tenserflow,
-                                    Sklearn, Movenet
+                                    Chrome Web Tools, JavaScript, HTML, CSS
                                 </span>
                             </div>
                             </article>
@@ -350,28 +363,25 @@
                                     <i style='font-size:33px' class='fas text-primary float-left'>&#xf07b;</i>
                                     </i>
                                     <i class="fa-light fa-arrow-right-from-arc float-right"></i></i></i>
-                                    <a href="https://github.com/SushrutDhakal" target="blank"><i
+                                    <a target=blank href="https://devpost.com/software/slack4uni"><i
+                                            class="fa fa-upload text-white float-right"
+                                            style="font-size:19px; padding-left: .5em;"></i></a>
+                                    <a href="https://github.com/kayn0111034/HoyaHacks-22" target="blank"><i
                                             class="text-white fa-brands fa-github float-right"
                                             style="font-size:20px;"></i></a>
                                 </div>
 
                                 <div class="heading-6 box-classic-title text-white" style="text-align: left;">
-                                    <b>SitUps!</b>
+                                    <b>Slack4Uni</b>
                                 </div>
                                 <div class="box-classic-text" style="text-align: left; color: #a19d8a;">
-                                    The amazing
-                                    flexibility of the
-                                    platform allows our users to easily sell
-                                    cryptocurrency and
-                                    buy tokens. This filler text is a short paragraph.
+                                    An API designed to streamline the University experience allowing users to
+                                    interact with the API to quickly access day-to-day information.
                                     <br><br>
 
                                     <span style="font-size:
                                                 13px; color: #a19d8a;">
-                                        Flask,
-                                        JavaScript,
-                                        Tenserflow,
-                                        Sklearn, Movenet
+                                        Python, Bolt, SQLite, Slack API
                                     </span>
                                 </div>
                             </article>
@@ -388,28 +398,22 @@
                                     <i style='font-size:33px' class='fas text-primary float-left'>&#xf07b;</i>
                                     </i>
                                     <i class="fa-light fa-arrow-right-from-arc float-right"></i></i></i>
-                                    <a href="https://github.com/SushrutDhakal" target="blank"><i
+                                    <a href="https://github.com/SushrutDhakal/Password-Guessing-Gamel" target="blank"><i
                                             class="text-white fa-brands fa-github float-right"
                                             style="font-size:20px;"></i></a>
                                 </div>
 
                                 <div class="heading-6 box-classic-title text-white" style="text-align: left;">
-                                    <b>ChatWatch</b>
+                                    <b>Code Cracker</b>
                                 </div>
                                 <div class="box-classic-text" style="text-align: left; color: #a19d8a;">
-                                    The amazing
-                                    flexibility of the
-                                    platform allows our users to easily sell
-                                    cryptocurrency and
-                                    buy tokens.
+                                    A simple but enjoyable recreation of the original Mastermind game where the user
+                                    attempts to crack the secret password.
                                     <br><br>
 
                                     <span style="font-size:
                                             13px;">
-                                        Flask,
-                                        JavaScript,
-                                        Tenserflow,
-                                        Sklearn, Movenet
+                                        Python, Tkinter, Random
                                     </span>
                                 </div>
                             </article>
@@ -426,28 +430,22 @@
                                     <i style='font-size:33px' class='fas text-primary float-left'>&#xf07b;</i>
                                     </i>
                                     <i class="fa-light fa-arrow-right-from-arc float-right"></i></i></i>
-                                    <a href="https://github.com/SushrutDhakal" target="blank"><i
+                                    <a href="https://github.com/SushrutDhakal/RainCoffee" target="blank"><i
                                             class="text-white fa-brands fa-github float-right"
                                             style="font-size:20px;"></i></a>
                                 </div>
 
                                 <div class="heading-6 box-classic-title text-white" style="text-align: left;">
-                                    <b>Insider Unlocked</b>
+                                    <b>CoffeeRain</b>
                                 </div>
                                 <div class="box-classic-text" style="text-align: left; color: #a19d8a;">
-                                    The amazing
-                                    flexibility of the
-                                    platform allows our users to easily sell
-                                    cryptocurrency and
-                                    buy tokens.
+                                    CoffeeRain is a website designed to streamline mental health attention to all. Use
+                                    the wide range of features to get the help you deserve.
                                     <br><br>
 
                                     <span style="font-size:
                                                 13px;">
-                                        Flask,
-                                        JavaScript,
-                                        Tenserflow,
-                                        Sklearn, Movenet
+                                        HTML, CSS, Vue, Python, Tailwind
                                     </span>
                                 </div>
                             </article>
@@ -465,28 +463,23 @@
                                     <i style='font-size:33px' class='fas text-primary float-left'>&#xf07b;</i>
                                     </i>
                                     <i class="fa-light fa-arrow-right-from-arc float-right"></i></i></i>
-                                    <a href="https://github.com/SushrutDhakal" target="blank"><i
+                                    <a href="https://github.com/MobinAkhter/HawkHacks" target="blank"><i
                                             class="text-white fa-brands fa-github float-right"
                                             style="font-size:20px;"></i></a>
                                 </div>
 
-                                <div class="heading-6 box-classic-title text-white" style="text-align: left;"><b>Insider
-                                        Unlocked</b>
+                                <div class="heading-6 box-classic-title text-white" style="text-align: left;">
+                                    <b>YText</b>
                                 </div>
                                 <div class="box-classic-text" style="text-align: left; color: #a19d8a;">
-                                    The amazing
-                                    flexibility of the
-                                    platform allows our users to easily sell
-                                    cryptocurrency and
-                                    buy tokens.
+                                    YText is essentially a
+                                    website where users can plug in a url from YouTube and then convert it into
+                                    transcripts to simplify their note taking.
                                     <br><br>
 
                                     <span style="font-size:
                                                 13px;">
-                                        Flask,
-                                        JavaScript,
-                                        Tenserflow,
-                                        Sklearn, Movenet
+                                        AssemblyAI, Bootstrap, CSS, HTML, JavaScript
                                     </span>
                                 </div>
                             </article>
@@ -508,23 +501,18 @@
                                             class="text-white fa-brands fa-github float-right"
                                             style="font-size:20px;"></i></a>
                                 </div>
-                                <div class="heading-6 box-classic-title text-white" style="text-align: left;"><b>Insider
-                                        Unlocked</b>
+                                <div class="heading-6 box-classic-title text-white" style="text-align: left;">
+                                    <b>Student Assistance
+                                    </b>
                                 </div>
                                 <div class="box-classic-text" style="text-align: left; color: #a19d8a;">
-                                    The amazing
-                                    flexibility of the
-                                    platform allows our users to easily sell
-                                    cryptocurrency and
-                                    buy tokens.
+                                    ISA is a website made for assisting international students with their struggles when
+                                    they enter an unknown community.
                                     <br><br>
 
                                     <span style="font-size:
                                                 13px;">
-                                        Flask,
-                                        JavaScript,
-                                        Tenserflow,
-                                        Sklearn, Movenet
+                                        Beautiful Soup, Selenium, Flask, JavaScript, HTML, CSS
                                     </span>
                                 </div>
                             </article>
@@ -569,7 +557,7 @@
                     </span>
                 </div>
             </div>
-            <br><br>
+
         </section>
     </div>
     <!-- Education End -->
@@ -676,12 +664,12 @@
                 </div>
             </div>
         </section>
-
     </div>
     <!-- Work Experience End -->
 
     <!-- Extra Curriculars -->
     <section id="achievements" class="section section-xl bg-black">
+        <br><br>
         <div class="container">
             <h3 class="text-decor wow fadeInUp text-white section-title"
                 style="text-align: left; padding-left: 30px; font-family: Proxima Nova, Frutiger, Avenir Next; font-size: 40px;">
@@ -703,96 +691,77 @@
                         Clubs
                     </h3>
                     <li>
-                        <span class="section-title">Business Club Executive <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="section-title">Business Club </span>
                     </li>
                     <li>
-                        <span class="text-box">Computer Club Executive <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">Computer Club </span>
                     </li>
                     <li>
-                        <span class="text-box">Maths Club Executive <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">Math Club </span>
                     </li>
                     <li>
-                        <span class="text-box">Chess Club <img src="https://img.icons8.com/color/48/000000/link--v2.png"
-                                width="15px;" /></span>
+                        <span class="text-box">Chess Club </span>
                     </li>
 
                     <h3>
                         <br>Hackathons
                     </h3>
                     <li>
-                        <span class="section-title">Hoyahacks 2022 - Best “Connected Campus” Use of Slack <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="section-title">Hoyahacks 2022 - Best “Connected Campus” Use of Slack </span>
                     </li>
                     <li>
-                        <span class="text-box">SF Hacks 2022- Runner Up (4th Place) <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">SF Hacks 2022- Runner Up (4th Place) </span>
                     </li>
                     <li>
-                        <span class="text-box">Hawkhacks 2022 - Runner up (4th Place) <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">Hawkhacks 2022 - Runner up (4th Place) </span>
                     </li>
 
                     <h3>
                         <br>Certifications
                     </h3>
                     <li>
-                        <span class="main-title">Microsoft Office <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="main-title">Microsoft Office </span>
                     </li>
                     <li>
-                        <span class="text-box">Programming in C++ <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">Programming in C++ </span>
                     </li>
                     <li>
-                        <span class="text-box">Web Developer Bootcamp <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">Web Developer Bootcamp </span>
                     </li>
                     <li>
-                        <span class="text-box">HoyaHacks Participation <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">HoyaHacks Participation </span>
                     </li>
 
                     <h3>
                         <br>Awards
                     </h3>
                     <li>
-                        <span class="main-title">Honour Roll Award: Grades 7-11 <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="main-title">Honour Roll Award: Grades 7-11 </span>
                     </li>
                     <li>
-                        <span class="text-box">ITF Taekwondo Tournament: First Place in Patterns and Sparring <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">ITF Taekwondo Tournament: First Place in Patterns and Sparring </span>
                     </li>
                     <li>
-                        <span class="text-box">All-Star Competitive Soccer: League Winner and Team MVP <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">All-Star Competitive Soccer: League Winner and Team MVP </span>
                     </li>
                     <li>
-                        <span class="text-box">Picoctf 2022: Top 100 in North America <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">Picoctf 2022: Top 100 in North America </span>
                     </li>
 
                     <h3>
                         <br>Hobbies
                     </h3>
                     <li>
-                        <span class="main-title">Playing Soccer <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="main-title">Playing Soccer </span>
                     </li>
                     <li>
-                        <span class="text-box">Cooking <img src="https://img.icons8.com/color/48/000000/link--v2.png"
-                                width="15px;" /></span>
+                        <span class="text-box">Cooking</span>
                     </li>
                     <li>
-                        <span class="text-box">Coding <img src="https://img.icons8.com/color/48/000000/link--v2.png"
-                                width="15px;" /></span>
+                        <span class="text-box">Coding</span>
                     </li>
                     <li>
-                        <span class="text-box">Playing the Guitar <img
-                                src="https://img.icons8.com/color/48/000000/link--v2.png" width="15px;" /></span>
+                        <span class="text-box">Playing the Guitar </span>
                     </li><br><br>
 
                 </div>
@@ -828,14 +797,14 @@
 
                         <div class="" style="font-size: 2em;">
                             <a href="https://github.com/SushrutDhakal">
-                                <i class="fa-brands fa-github" target="_blank" style="color: #3bc2ea"></i>
+                                <i class="fa-brands fa-github topLogos" target="_blank" style="color: #fff"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/sushrut-dhakal/">
-                                <i class="fa-brands fa-linkedin" target="_blank" style="color: #3bc2ea"></i>
+                                <i class="fa-brands fa-linkedin topLogos" target="_blank" style="color: #fff"></i>
                             </a>
                             <a href="mailto:sushrut.dhakal@gmail.com" class="icon-button
                                 google" target="_blank" rel="noopener
-                                noreferrer"><i class="fab fa-google" style="color: #3bc2ea;"></i>
+                                noreferrer"><i class="fab fa-google topLogos" style="color: #fff;"></i>
                             </a>
 
                         </div>
@@ -933,12 +902,16 @@
             border-radius: 10px;
             font-size: 35px;
         }
+
+        #myBtn:active {
+            background-color: #1818ae !important;
+        }
     </style>
     </head>
 
     <body>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-hand-point-up"
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-hand-point-up topBtn"
                 aria-hidden="true"></i></button>
 
         <script>

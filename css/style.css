@@ -20,6 +20,10 @@ body {
   user-select: none;
 }
 
+.topLogos:hover {
+  color: #30f2ff !important;
+}
+
 .bossman {
   background-color: #130f22 !important;
   color: white !important;
@@ -228,7 +232,6 @@ img {
   margin-left: 0;
 }
 
-
 .sidebar-navigation {
   background: #171623;
   position: fixed;
@@ -368,7 +371,7 @@ img {
 
 .container-x p span.typed-text {
   font-weight: normal;
-  color: #59c6ec;
+  color: #30f2ff;
 }
 
 .container-x p span.cursor {
@@ -1944,6 +1947,12 @@ img {
   right: 14%;
   height: 100%;
   transform: translateX(50%);
+}
+
+.toWebsite {
+  font-size: .5em !important;
+  color: #007bff !important;
+  background-color: #007bff !important;
 }
 
 .context-light .line path,
